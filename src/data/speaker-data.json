@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. R. David Edelman",
+        "role": "Founder & Director, Project on Technology, the Economy, and National Security, MIT Former White House Tech Advisor",
+        "category": "Keynote",
+        "languageCategory": "Əsas söz",
+        "image": "../src/assets/img/dr.-r.-david-edelman-keynote-576.png",
+        "logo": "../src/assets/img/keynote-2.png"
+    },
+    {
+        "id": 2,
+        "name": "Dimitris Manikis",
+        "role": "President and MD for EMEA",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "../src/assets/img/dimitris-manikis-wyndham-576x720.png",
+        "logo": "../src/assets/img/whr_logo_rev.svg"
+    },
+    {
+        "id": 3,
+        "name": "Fiona McDonnell",
+        "role": "VP Global Partner Services",
+        "category": "Technology",
+        "languageCategory": "Texnologiya",
+        "image": "../src/assets/img/fiona-mcdonnell-booking.com-576x.png",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/Ligula.png?width=227&height=248&name=Ligula.png"
+    },
+    {
+        "id": 4,
+        "name": "Matt Welle",
+        "role": "CEO",
+        "category": "Technology",
+        "languageCategory": "Texnologiya",
+        "image": "../src/assets/img/matt-welle-mews-576x720-crop-q72.png",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/YHA%20-%20AU.png?width=257&height=248&name=YHA%20-%20AU.png"
+    },
+    {
+        "id": 5,
+        "name": "Joanne Dreyfus",
+        "role": "Leader of Transportation, Hospitality and Services",
+        "category": "Consultant",
+        "languageCategory": "Məsləhətçi",
+        "image": "../src/assets/img/joanne-dreyfus-deloitte-576x720.png",
+        "logo": "../src/assets/img/deloitte.png"
+    },
+    {
+        "id": 6,
+        "name": "Denis Montrelay",
+        "role": "CFO",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "../src/assets/img/denis-monterlay-tsh-1-576x720-cr.png",
+        "logo": "../src/assets/img/theSocialHub.png"
+    },
+    {
+        "id": 7,
+        "name": "Marion Barrère",
+        "role": "Curation Director",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "../src/assets/img/marion-barrere-mr-mrs-smith-576x.png",
+        "logo": "../src/assets/img/rGFELMjtwVXu.png"
+    },
+    {
+        "id": 8,
+        "name": "Richard Valtr",
+        "role": "Founder",
+        "category": "Technology",
+        "languageCategory": "Texnologiya",
+        "image": "../src/assets/img/richard-valtr-mews-576x720-crop.png",
+        "logo": "../src/assets/img/Mews.png"
+    },
+    {
+        "id": 9,
+        "name": "Laura Nolte",
+        "role": "VP Brand Marketing & Comms",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "../src/assets/img/laura-nolte-sircle-576x720-crop.png",
+        "logo": "../src/assets/img/smb-logos3.png"
+    },
+    {
+        "id": 10,
+        "name": "Eirik Bogsnes",
+        "role": "Executive VP",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "https://mewsunfold.com/media/pages/speakers/eirik-bogsnes/fe85116b10-1712670919/eirik-bogsnes-strawberry-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/Locale%20Apartments%20-%20USA.png?width=315&height=248&name=Locale%20Apartments%20-%20USA.png"
+    },
+    {
+        "id": 11,
+        "name": "Diederik Visser",
+        "role": "Director of IT",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "https://mewsunfold.com/media/pages/speakers/diederik-visser/744291e007-1712154509/diederik-visser-zien-group-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/The%20Dylan%20%E2%80%93%20EN.png?width=164&height=248&name=The%20Dylan%20%E2%80%93%20EN.png"
+    },
+    {
+        "id": 12,
+        "name": "Leah Anathan",
+        "role": "CMO",
+        "category": "Technology",
+        "languageCategory": "Texnologiya",
+        "image": "https://mewsunfold.com/media/pages/speakers/leah-anathan/c03bd3d5ab-1712154278/leah-anathan-mews-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/YHA%20-%20AU.png?width=257&height=248&name=YHA%20-%20AU.png"
+    },
+    {
+        "id": 13,
+        "name": "Chris Hemmeter",
+        "role": "Managing Director",
+        "category": "Consultant",
+        "languageCategory": "Məsləhətçi",
+        "image": "https://mewsunfold.com/media/pages/speakers/chris-hemmeter/46d3257160-1712312133/chris-hemmeter-thayer-ventures-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/Boundary%20London%20-%20EN.png?width=444&height=248&name=Boundary%20London%20-%20EN.png"
+    },
+    {
+        "id": 14,
+        "name": "Niko Karstikko",
+        "role": "Co-Founder and CEO",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "https://mewsunfold.com/media/pages/speakers/niko-karstikko/9c2d509afe-1712227062/niko-karstikko-bob-w-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/The%20Social%20Hub.png?width=545&height=533&name=The%20Social%20Hub.png"
+    },
+    {
+        "id": 15,
+        "name": "Claudia Meglin",
+        "role": "Director",
+        "category": "Hotelier",
+        "languageCategory": "Otelçi",
+        "image": "https://mewsunfold.com/media/pages/speakers/claudia-meglin/e89ba0a70e-1710765511/claudia-meglin-generator-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/Les%20Rouches%20Rouges.png?width=444&height=248&name=Les%20Rouches%20Rouges.png"
+    },
+    {
+        "id": 16,
+        "name": "Dorothy Creamer",
+        "role": "Senior Research Manager",
+        "category": "Consultant",
+        "languageCategory": "Məsləhətçi",
+        "image": "https://mewsunfold.com/media/pages/speakers/dorothy-creamer/6c5e4e5392-1712671316/dorothy-creamer-idc-576x720-crop-q72.jpg",
+        "logo": "https://www.mews.com/hs-fs/hubfs/_2023_update/Property%20Logos%20(Black)/The%20Dylan%20%E2%80%93%20EN.png?width=164&height=248&name=The%20Dylan%20%E2%80%93%20EN.png"
+    }
+]

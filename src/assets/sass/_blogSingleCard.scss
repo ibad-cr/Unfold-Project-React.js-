@@ -1,0 +1,90 @@
+.blog-single-card {
+    .blog-single-card-users-items {
+        .blog-single-card-add-users-opinion {
+            h6 {
+                padding: 0;
+                margin: 0;
+            }
+
+            .blog-single-card-users-logo {
+                img {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .input-and-textArea {
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+            padding: 15px 0px 15px 20px;
+        }
+
+        input::placeholder {
+            font-style: italic;
+        }
+
+        input:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            border-bottom: 1px solid black !important;
+        }
+
+        textarea {
+            padding: 0px 0px 0px 20px;
+        }
+
+        textarea:focus {
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+            border-bottom: 1px solid black !important;
+        }
+
+        textarea:valid {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        textarea::placeholder {
+            font-style: italic;
+        }
+
+        .back-and-add-buttons {
+            display: flex;
+
+            .back-blog-page {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: black;
+                border: none;
+                border-radius: 50em;
+                font-size: 14px;
+            }
+
+            .back-arrow {
+                transition: 0.4s;
+                transform: translateX(5px);
+            }
+
+            .back-blog-page:hover .back-arrow {
+                transform: translateX(-5px);
+            }
+
+            button {
+                border: none;
+                border-radius: 50em;
+                padding: 5px 20px;
+                font-size: 14px;
+                background: #aeadff;
+                color: white;
+            }
+        }
+    }
+}

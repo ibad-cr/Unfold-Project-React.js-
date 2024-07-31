@@ -1,0 +1,206 @@
+.blog-page {
+    .blog-users-opinion {
+        .blog-users-opinion-category {
+            font-weight: bold;
+            color: #9897ff;
+            position: relative;
+            padding-left: 10px;
+        }
+
+        .blog-users-opinion-category:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 1px;
+            height: 100%;
+            background: #b3b2fb;
+        }
+
+        .blog-users-information {
+            padding-left: 20px;
+        }
+    }
+
+    .blog-line {
+        width: 100%;
+        height: 0.1px;
+        background: black;
+    }
+
+    .plus-and-add-buttons {
+        display: inline-block !important;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+
+        .blog-add-button {
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            border: none !important;
+            background: none;
+        }
+
+    }
+
+    .blog-users-items {
+        h6 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .information-edit-delete-button {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .blog-users-logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .edit-and-trash-buttons {
+            display: flex;
+            align-items: center;
+
+            .blog-edit-button {
+                .editBtn {
+                    width: 25px;
+                    height: 25px;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    position: relative;
+                    overflow: hidden;
+                    transition: all 0.3s;
+                    background: none;
+                }
+
+                .editBtn::before {
+                    content: "";
+                    width: 200%;
+                    height: 200%;
+                    position: absolute;
+                    z-index: 1;
+                    transform: scale(0);
+                    transition: all 0.3s;
+                    border-radius: 50%;
+                    filter: blur(10px);
+                }
+
+                .editBtn:hover::before {
+                    transform: scale(1);
+                }
+
+                .editBtn svg {
+                    height: 13px;
+                    fill: black;
+                    z-index: 3;
+                    transition: all 0.2s;
+                    transform-origin: bottom;
+                }
+
+                .editBtn:hover svg {
+                    transform: rotate(-15deg) translateX(5px);
+                }
+
+                .editBtn::after {
+                    content: "";
+                    width: 25px;
+                    height: 1.5px;
+                    position: absolute;
+                    bottom: 5px;
+                    left: -5px;
+                    background-color: black;
+                    border-radius: 2px;
+                    z-index: 2;
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.5s ease-out;
+                }
+
+                .editBtn:hover::after {
+                    transform: scaleX(1);
+                    left: 0px;
+                    transform-origin: right;
+                }
+
+            }
+
+            .blog-trash-button {
+                .btn {
+                    background-color: transparent;
+                    position: relative;
+                    border: none;
+                    font-size: 0px;
+                }
+
+                .btn::after {
+                    content: 'delete';
+                    position: absolute;
+                    top: -130%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: rgb(168, 7, 7);
+                    padding: 4px 8px;
+                    border-radius: 5px;
+                    transition: .2s linear;
+                    transition-delay: .2s;
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                .icon {
+                    transform: scale(1.2);
+                    transition: .2s linear;
+
+                }
+
+                .btn:hover>.icon {
+                    transform: scale(1.5);
+
+                }
+
+                .btn:hover>.icon path {
+                    fill: rgb(168, 7, 7);
+                }
+
+                .btn:hover::after {
+                    visibility: visible;
+                    opacity: 1;
+                    top: -80%;
+                }
+            }
+        }
+
+        select,
+        .blog-modal-textarea {
+            outline: none !important;
+            box-shadow: none !important;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid rgb(137, 137, 137);
+            padding: 10px 0px 10px 10px;
+        }
+
+        .btn-close {
+            outline: none !important;
+            box-shadow: none !important;
+            border: none !important;
+        }
+
+    }
+}

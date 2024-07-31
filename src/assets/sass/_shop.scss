@@ -1,0 +1,335 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Book.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regualar.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body,
+* {
+    font-family: 'Axiforma', sans-serif;
+}
+
+.shop-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    background: #1e1e25;
+
+    .shop-container {
+        width: 93% !important;
+
+        .matt-and-richard {
+            margin-bottom: 200px !important;
+
+            .first-cart {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+
+                .left-side {
+                    width: 60%;
+
+                    h3,
+                    p {
+                        color: white;
+                    }
+
+                    p {
+                        font-size: 14px !important;
+                    }
+
+                    h3 {
+                        font-size: 40px !important;
+                        border-left: 2px solid white;
+                        padding-left: 10px;
+                    }
+                }
+
+                .right-side {
+                    img {
+                        margin-bottom: 20px !important;
+                        width: 380px;
+                        height: 380px;
+                        border-radius: 32px;
+                    }
+                }
+            }
+
+            .second-cart {
+                .first-cart-2 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+
+                    .left-side-2 {
+                        width: 60%;
+
+                        h3,
+                        p {
+                            color: white;
+                        }
+
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+
+                    .right-side-2 {
+                        img {
+                            margin-bottom: 20px !important;
+                            width: 380px;
+                            height: 380px;
+                            border-radius: 32px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shop-carts {
+            white-space: nowrap;
+
+            h1 {
+                color: white;
+                font-size: 50px;
+            }
+
+            button {
+                background: none;
+                border: none;
+                color: white;
+                padding: 0.7em 1.2em;
+                font-size: 14px;
+            }
+
+            button.active {
+                background-color: #dfddf5;
+                border: 1px solid white;
+                border-radius: 50em;
+                color: black;
+            }
+
+            // button:hover {
+            //     background: #3a3a41;
+            //     border-radius: 50em;
+            //     color: white;
+            // }
+        }
+
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .horizontal-animation {
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+            .images {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .images:hover .images-slide {
+                animation-play-state: paused;
+            }
+
+            .images-slide {
+                display: inline-block;
+                animation: 20s slide infinite linear;
+            }
+
+            .images-slide img {
+                width: 220px;
+                height: 220px;
+                object-fit: cover;
+                margin: 0px 10px;
+                border-radius: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .shop-container {
+        .matt-and-richard {
+            .first-cart {
+                display: flex;
+                align-items: center;
+                flex-direction: column-reverse !important;
+
+                .left-side {
+                    width: 100% !important;
+                }
+
+                .right-side {
+                    img {
+                        width: 480px !important;
+                        height: 380px !important;
+                        object-fit: cover;
+                        border-radius: 32px;
+                    }
+                }
+            }
+
+            .second-cart {
+                margin-top: 30px;
+
+                .first-cart-2 {
+                    flex-direction: column !important;
+
+                    .left-side-2 {
+                        width: 100% !important;
+                    }
+
+                    .right-side-2 {
+                        img {
+                            margin-bottom: 20px !important;
+                            width: 480px !important;
+                            height: 380px !important;
+                            object-fit: cover;
+                            border-radius: 32px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shop-button-list {
+            gap: 5px !important;
+
+            .admin-add-by-ticket {
+                margin-top: 10px !important;
+            }
+        }
+
+        .horizontal-animation {
+            margin-top: 100px;
+            margin-bottom: 50px !important;
+
+            .images {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .images:hover .images-slide {
+                animation-play-state: paused;
+            }
+
+            .images-slide {
+                display: inline-block;
+                animation: 20s slide infinite linear;
+            }
+
+            .images-slide img {
+                width: 150px !important;
+                height: 150px !important;
+                object-fit: cover;
+                margin: 0px 10px;
+                border-radius: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .shop-container {
+        .matt-and-richard {
+            .first-cart {
+                display: flex;
+                align-items: center;
+                flex-direction: column-reverse !important;
+
+                .left-side {
+                    width: 100% !important;
+                }
+
+                .right-side {
+                    img {
+                        width: 480px !important;
+                        height: 380px !important;
+                        object-fit: cover;
+                        border-radius: 32px;
+                    }
+                }
+            }
+
+            .second-cart {
+                margin-top: 30px;
+
+                .first-cart-2 {
+                    flex-direction: column !important;
+
+                    .left-side-2 {
+                        width: 100% !important;
+                    }
+
+                    .right-side-2 {
+                        img {
+                            margin-bottom: 20px !important;
+                            width: 480px !important;
+                            height: 380px !important;
+                            object-fit: cover;
+                            border-radius: 32px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shop-button-list {
+            gap: 5px !important;
+
+            .admin-add-by-ticket {
+                margin-top: 10px !important;
+            }
+        }
+
+        .horizontal-animation {
+            margin-top: 100px;
+            margin-bottom: 50px !important;
+
+            .images {
+                overflow: hidden;
+                white-space: nowrap;
+            }
+
+            .images:hover .images-slide {
+                animation-play-state: paused;
+            }
+
+            .images-slide {
+                display: inline-block;
+                animation: 20s slide infinite linear;
+            }
+
+            .images-slide img {
+                width: 150px !important;
+                height: 150px !important;
+                object-fit: cover;
+                margin: 0px 10px;
+                border-radius: 24px;
+            }
+        }
+    }
+}

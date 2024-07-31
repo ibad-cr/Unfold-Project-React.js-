@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Book.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regualar.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body,
+* {
+    font-family: 'Axiforma', sans-serif;
+}
+
+.swiper-elements {
+    .swiper-margin-top {
+        margin-top: 25px;
+    }
+
+    .swiper-elements-image {
+        position: relative;
+        width: 100%;
+        box-shadow: 20px 23px 61px 0px rgba(182, 85, 213, 0.1);
+        -webkit-box-shadow: 20px 23px 61px 0px rgba(182, 85, 213, 0.1);
+        -moz-box-shadow: 20px 23px 61px 0px rgba(182, 85, 213, 0.1);
+        background: none !important;
+        background-color: transparent !important;
+
+        img {
+            border-radius: 25px;
+            width: 332px;
+            height: 415px;
+        }
+
+        .absolute-card-text {
+            .text {
+                @include displayFlex;
+                background-color: #DFDDF5;
+                width: 70px;
+                height: 25px;
+                border-radius: 18px !important;
+                color: #1c1d24;
+                font-size: 0.85em;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                margin: 0;
+                padding: 0
+            }
+
+            .text-fiona {
+                @include displayFlex;
+                background-color: #DFDDF5;
+                width: 90px;
+                height: 25px;
+                border-radius: 18px !important;
+                color: #1c1d24;
+                font-size: 0.85em;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            .text-joanne {
+                @include displayFlex;
+                background-color: #DFDDF5;
+                width: 90px;
+                height: 25px;
+                border-radius: 18px !important;
+                color: #1c1d24;
+                font-size: 0.85em;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+
+            .text-matt {
+                @include displayFlex;
+                background-color: #DFDDF5;
+                width: 90px;
+                height: 25px;
+                border-radius: 18px !important;
+                color: #1c1d24;
+                font-size: 0.85em;
+                letter-spacing: 0.5px;
+                font-weight: 500;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+        }
+
+        .absolute-card-img {
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+
+            img {
+                width: 85px;
+                height: 85px;
+                object-fit: cover;
+                border: 5px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        .absolute-card-img-fiona {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+            width: 85px !important;
+            height: 85px !important;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 50%;
+            background-color: white;
+
+            svg {
+                filter: invert(100%);
+            }
+
+        }
+
+        .absolute-card-img-dimitris {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+            background-color: white;
+            width: 85px;
+            height: 85px;
+            border: 5px solid white;
+            border-radius: 50%;
+
+            img {
+                width: 85px;
+                height: 85px;
+                filter: invert(100%);
+            }
+        }
+
+        .absolute-card-img-joanne {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+            background-color: white;
+            width: 85px;
+            height: 85px;
+            border: 5px solid white;
+            border-radius: 50%;
+
+            img {
+                width: 65px;
+                height: 65px;
+                object-fit: contain;
+                filter: invert(100%);
+            }
+        }
+
+        .absolute-card-img-denis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: 230px;
+            background-color: white;
+            width: 85px;
+            height: 85px;
+            border: 5px solid white;
+            border-radius: 50%;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+                // filter: invert(100%);
+            }
+        }
+    }
+
+    .swiper-elements-text {
+        width: 100%;
+
+        h5 {
+            color: white;
+            font-size: 1.3em;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            color: white;
+            font-size: 1.1em;
+            opacity: 0.7;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .swiper-margin-top {
+        margin-top: 0px !important;
+    }
+
+    .swiper-elements-image {
+        position: relative;
+        width: 100% !important;
+        box-shadow: none !important;
+        background: none !important;
+        background-color: transparent !important;
+
+
+        img {
+            border-radius: 25px;
+            width: 100% !important;
+            height: 100% !important;
+        }
+
+        .absolute-card-img {
+            position: absolute;
+            bottom: 20px;
+            right: -200px;
+            left: 320px !important;
+
+            img {
+                width: 30% !important;
+                object-fit: cover;
+                border: 5px solid white;
+                border-radius: 50%;
+            }
+        }
+
+        .absolute-card-img-fiona {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            left: 320px !important;
+            width: 85px !important;
+            height: 85px !important;
+            object-fit: cover;
+            border: 5px solid white;
+            border-radius: 50%;
+            background-color: white;
+
+            svg {
+                filter: invert(100%);
+            }
+
+        }
+
+        .absolute-card-img-dimitris {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: 20px;
+            left: 320px !important;
+            background-color: white;
+            width: 85px;
+            height: 85px;
+            border: 5px solid white;
+            border-radius: 50%;
+
+            img {
+                width: 85px;
+                height: 85px;
+                filter: invert(100%);
+            }
+        }
+
+        .absolute-card-img-joanne {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: 320px !important;
+            background-color: white;
+            width: 85px !important;
+            height: 85px !important;
+            border: 5px solid white;
+            border-radius: 50%;
+
+            img {
+                width: 65px;
+                height: 65px;
+                object-fit: contain;
+                filter: invert(100%);
+            }
+        }
+
+        .absolute-card-img-denis {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            left: 320px !important;
+            background-color: white;
+            width: 85px;
+            height: 85px;
+            border: 5px solid white;
+            border-radius: 50%;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+// @media (min-width: 993px) and (max-width: 1023px) {
+//     .swiper-margin-top {
+//         margin-top: 0px !important;
+//     }
+
+//     .swiper-elements-image {
+//         position: relative !important;
+//         width: 100% !important;
+//         box-shadow: none !important;
+//         background: none !important;
+//         background-color: transparent !important;
+
+
+//         img {
+//             border-radius: 25px !important;
+//             width: 100% !important;
+//             height: 100% !important;
+//         }
+
+//         .absolute-card-img {
+//             position: absolute !important;
+//             bottom: 20px !important;
+//             right: -200px !important;
+//             left: 320px !important;
+
+//             img {
+//                 width: 30% !important;
+//                 object-fit: cover !important;
+//                 border: 5px solid white !important;
+//                 border-radius: 50% !important;
+//             }
+//         }
+
+//         .absolute-card-img-fiona {
+//             display: flex !important;
+//             position: absolute !important;
+//             bottom: 20px !important;
+//             left: 320px !important;
+//             width: 85px !important;
+//             height: 85px !important;
+//             object-fit: cover !important; 
+//             border: 5px solid white !important;
+//             border-radius: 50% !important;
+//             background-color: white !important;
+
+//             svg {
+//                 filter: invert(100%) !important;
+//             }
+
+//         }
+
+//         .absolute-card-img-dimitris {
+//             display: flex;
+//             justify-content: center;
+//             position: absolute;
+//             bottom: 20px;
+//             left: 320px !important;
+//             background-color: white;
+//             width: 85px;
+//             height: 85px;
+//             border: 5px solid white;
+//             border-radius: 50%;
+
+//             img {
+//                 width: 85px;
+//                 height: 85px;
+//                 filter: invert(100%);
+//             }
+//         }
+
+//         .absolute-card-img-joanne {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             position: absolute;
+//             bottom: 20px;
+//             left: 320px !important;
+//             background-color: white;
+//             width: 85px !important;
+//             height: 85px !important;
+//             border: 5px solid white;
+//             border-radius: 50%;
+
+//             img {
+//                 width: 65px;
+//                 height: 65px;
+//                 object-fit: contain;
+//                 filter: invert(100%);
+//             }
+//         }
+
+//         .absolute-card-img-denis {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             position: absolute;
+//             bottom: 20px;
+//             left: 320px !important;
+//             background-color: white;
+//             width: 85px;
+//             height: 85px;
+//             border: 5px solid white;
+//             border-radius: 50%;
+
+//             img {
+//                 width: 50px;
+//                 height: 50px;
+//                 object-fit: contain;
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Book.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regualar.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+* {
+    font-family: 'Axiforma', sans-serif;
+}
+
+
+
+.single-card-element {
+    margin-top: 100px;
+
+    .container {
+        .cards {
+            .headline-partner {
+                .card {
+                    margin-top: 30px;
+                    position: relative;
+                    cursor: pointer;
+
+                    .card-body {
+                        svg {
+                            width: 120px;
+                            height: 120px;
+                        }
+
+                        .partners-logo-image {
+                            width: 100px;
+                            height: 100px;
+                            object-fit: contain;
+                        }
+
+                        .information-button {
+                            position: absolute;
+                            top: -25px;
+                            right: 0;
+
+                            .plus-button {
+                                transition: 0.5s;
+                                @include displayFlex();
+                                border: 1px solid rgb(178, 178, 178);
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                margin-right: 50px;
+                            }
+
+                        }
+                    }
+                }
+
+                .card:hover button {
+                    background-color: #b2b3fb;
+                    border: #b2b3fb;
+                }
+
+                .btn-close {
+                    background-color: #b2b3fb;
+                    border-radius: 50%;
+                    font-size: 0.7em !important;
+                    padding: 15px;
+                    box-shadow: none;
+                    border: none;
+                    outline: none;
+                }
+
+                .modal-header {
+                    border: none !important;
+                }
+            }
+        }
+    }
+}

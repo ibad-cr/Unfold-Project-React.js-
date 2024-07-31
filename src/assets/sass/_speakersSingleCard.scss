@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Book.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regualar.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.speakers-single-cards {
+    .card {
+        position: relative;
+
+        .speakers-logo-absolute {
+            position: absolute;
+            right: 20px;
+            bottom: 150px;
+            background: none !important;
+            border-radius: 50%;
+            background: none !important;
+            
+            img {
+                background: none !important;
+                width: 85px;
+                height: 85px;
+                background: none !important;
+                border-radius: 50% !important;
+                object-fit: contain;
+            }
+        }
+
+        .speakers-category {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            p {
+                margin: 0;
+                padding: 0;
+                font-size: 13px;
+                background: #dfddf5;
+                border-radius: 50em;
+                padding: 0px 8px;
+                line-height: 2.3;
+            }
+        }
+
+        img {
+            border-radius: 28px !important;
+            box-shadow: 20px 23px 61px 0px rgba(182, 85, 213, 0.1);
+            -webkit-box-shadow: 20px 23px 61px 0px rgba(182, 85, 213, 0.1);
+            -moz-box-shadow: 20px 23px 61px 0px rgba(182, 85, 213, 0.1);
+        }
+
+        .card-title {
+            font-size: 1.2em;
+        }
+
+        .card-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1em;
+            opacity: 0.7;
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .speakers-single-cards {
+        .card {
+            position: relative;
+
+            .logo-absolute {
+                position: absolute;
+                right: 10px;
+                bottom: 110px;
+
+                img {
+                    width: 65px;
+                    height: 65px;
+                    object-fit: contain;
+                }
+            }
+
+            .category {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 10px;
+                    background: #dfddf5;
+                    border-radius: 50em;
+                    padding: 0px 8px;
+                    line-height: 2.3;
+                }
+            }
+
+            img {
+                border-radius: 28px !important;
+            }
+
+            .card-title {
+                font-size: 1em;
+            }
+
+            .card-text {
+                font-family: 'Inter', sans-serif;
+                font-size: 0.9em;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .speakers-single-cards {
+        .card {
+            position: relative;
+
+            .logo-absolute {
+                position: absolute;
+                right: 10px;
+                bottom: 110px;
+
+                img {
+                    width: 65px;
+                    height: 65px;
+                    object-fit: contain;
+                }
+            }
+
+            .category {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 10px;
+                    background: #dfddf5;
+                    border-radius: 50em;
+                    padding: 0px 8px;
+                    line-height: 2.3;
+                }
+            }
+
+            img {
+                border-radius: 28px !important;
+            }
+
+            .card-title {
+                font-size: 1em;
+            }
+
+            .card-text {
+                font-family: 'Inter', sans-serif;
+                font-size: 0.9em;
+                opacity: 0.7;
+            }
+
+            .speakers-logo-absolute {
+                bottom: 130px;
+                
+                img {
+                    width: 65px;
+                    height: 65px;
+                }
+            }
+        }
+    }
+}

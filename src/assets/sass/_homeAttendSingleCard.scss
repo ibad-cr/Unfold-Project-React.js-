@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Medium.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff'),
+        url('../fonts/Axiforma-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body,
+* {
+    font-family: 'Axiforma', sans-serif;
+}
+
+
+.single-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .data-number {
+        color: rgb(179, 178, 251);
+        font-size: clamp(1.875rem, 0.2679rem + 4.4643vw, 3.125rem);
+        white-space: nowrap;
+        margin-right: 40px !important;
+    }
+
+    .data-text {
+        color: white;
+        opacity: 0.6;
+        font-size: 16px;
+        font-weight: normal;
+        font-size: clamp(0.8125rem, 0.5714rem + 0.6696vw, 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .single-card {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .data-number {
+        margin-right: 20px !important;
+    }
+
+    .data-text {
+        width: 10% !important;
+        white-space: nowrap;
+    }
+}

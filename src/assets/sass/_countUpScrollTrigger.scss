@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Medium.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff'),
+        url('../fonts/Axiforma-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin displayFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.participants {
+    .measure {
+        width: 550px;
+        height: 170px;
+        border-radius: 100px;
+        border: 1px solid white;
+
+        h1 {
+            font-size: 60px;
+            color: white;
+        }
+
+        p {
+            font-size: 17px;
+            color: white;
+            opacity: 0.6;
+        }
+
+    }
+}
+
+
+.participants-wrapper {
+    @include displayFlex;
+
+    .participants-container {
+        width: 75%;
+    }
+}
+
+.participants {
+    display: block;
+}
+
+.responsive-participants-part {
+    display: none;
+}
+
+@media (max-width: 576px) {
+    .participants {
+        display: none;
+    }
+
+    .responsive-participants-part {
+        display: block;
+        margin-left: 15px;
+        margin-right: 15px;
+
+        .measure-responsive {
+            border: 2px solid white;
+            width: 100%;
+            border-radius: 60px;
+
+            h1,
+            p {
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .participants {
+        display: none;
+    }
+
+    .responsive-participants-part {
+        display: block;
+
+        .measure-responsive {
+            border: 2px solid white;
+            width: 100%;
+            border-radius: 60px;
+
+            h1 , p{
+                color: white;
+            }
+        }
+    }
+}

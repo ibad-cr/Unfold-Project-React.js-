@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Book.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regualar.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.accordion {
+    .category {
+        display: inline-block;
+
+        h6 {
+            background: #dcdcff;
+            display: inline;
+            font-size: 0.8em;
+            padding: 6px;
+            border-radius: 0.66em 0.66em 0 0;
+        }
+    }
+
+    .toggle-div {
+        .title {
+            color: #1c1d24;
+        }
+
+        .text {
+            max-height: 0;
+            transition: max-height 1s !important;
+            color: #1c1d24bf;
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            margin: 0px !important;
+            padding: 0 !important;
+            white-space: wrap !important;
+        }
+        
+        .text.active {
+            max-height: 300px;
+            transition: max-height 1s !important;
+            margin: 0px !important;
+            padding: 0 !important;
+            opacity: 1 !important;
+            white-space: wrap !important;
+            overflow: hidden !important;
+        }
+
+        .open-button {
+            border: 1px solid #bdbcff;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            font-size: 15px;
+        }
+
+        .open-button.clicked {
+            transform: rotate(180deg);
+        }
+    }
+
+    .toggle-div:hover .open-button {
+        background: #bdbcff;
+        transition: 0.5s;
+    }
+}

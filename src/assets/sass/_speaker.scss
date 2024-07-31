@@ -1,0 +1,230 @@
+@font-face {
+    font-family: 'Axiforma';
+    src: url('../fonts/Axiforma-Medium.woff2') format('woff2'),
+        url('../fonts/Axiforma-Medium.woff') format('woff'),
+        url('../fonts/Axiforma-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body,
+* {
+    font-family: 'Axiforma', sans-serif;
+}
+
+@mixin displayflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-speakers {
+    padding-top: 180px;
+
+    .all-speakers-wrapper {
+        @include displayflex();
+
+        .all-speakers-container {
+            width: 83%;
+            position: relative;
+            z-index: 1;
+
+            .texts-part {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: start;
+
+                h1,
+                h6 {
+                    color: white;
+                }
+
+                .title-text {
+                    width: 50%;
+
+                    h1 {
+                        font-size: 5em;
+                    }
+                }
+
+                .paragraph {
+                    width: 35%;
+
+                    h6 {
+                        font-size: 1em;
+                        font-family: 'Inter', sans-serif !important;
+                        opacity: 0.7;
+                    }
+                }
+            }
+
+            .line {
+                margin-top: 50px;
+                height: 0.1px;
+                width: 100%;
+                background: white;
+                opacity: 0.6;
+            }
+
+            .filter-button {
+                ul {
+                    display: flex;
+                    padding: 0;
+                    margin: 0;
+                    gap: 6px;
+                    cursor: pointer;
+
+                    button {
+                        padding: 0.7em 1.2em;
+                        background-color: transparent;
+                        border: 1px solid white;
+                        border-radius: 50em;
+                        color: white;
+                        font-size: 14px;
+                        transition: 0.3s;
+                    }
+
+                    button:hover {
+                        background: #3a3a41;
+                    }
+
+                    button:focus {
+                        background: #dfddf5;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .all-speakers {
+        background: #1e1e25;
+        padding-top: 80px !important;
+        z-index: -1;
+
+        .all-speakers-wrapper {
+            @include displayflex();
+
+            .all-speakers-container {
+                width: 93% !important;
+                position: relative;
+                z-index: 1;
+
+                .texts-part {
+                    display: flex;
+                    flex-direction: column !important;
+                    align-items: start;
+
+                    h1,
+                    h6 {
+                        color: white;
+                    }
+
+                    .title-text {
+                        width: 100% !important;
+
+                        h1 {
+                            font-size: 2.5em !important;
+                        }
+                    }
+
+                    .paragraph {
+                        width: 100% !important;
+
+                        h6 {
+                            font-size: 0.9em !important;
+                            font-family: 'Inter', sans-serif !important;
+                            opacity: 0.7;
+                            width: 85%;
+                        }
+                    }
+                }
+
+                .line {
+                    margin-top: 30px !important;
+                    height: 0.1px;
+                    width: 100%;
+                    background: white;
+                    opacity: 0.6;
+                }
+
+                .filter-button {
+                    ul {
+                        display: flex;
+                        padding: 0;
+                        margin: 0;
+                        gap: 6px;
+
+                        button {
+                            cursor: pointer;
+                            font-size: 11px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .all-speakers-container {
+        width: 93% !important;
+    }
+
+    .texts-part {
+        display: flex;
+        flex-direction: column !important;
+        align-items: start;
+
+        h1,
+        h6 {
+            color: white;
+        }
+
+        .title-text {
+            width: 100% !important;
+
+            h1 {
+                font-size: 4em !important;
+            }
+        }
+
+        .paragraph {
+            width: 100% !important;
+
+            h6 {
+                font-size: 0.9em !important;
+                font-family: 'Inter', sans-serif !important;
+                opacity: 0.7;
+                width: 85%;
+            }
+        }
+    }
+
+    .line {
+        margin-top: 30px !important;
+        height: 0.1px;
+        width: 100%;
+        background: white;
+        opacity: 0.6;
+    }
+
+    .filter-button {
+        ul {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            gap: 6px;
+
+            button {
+                cursor: pointer;
+                font-size: 11px !important;
+            }
+        }
+    }
+}

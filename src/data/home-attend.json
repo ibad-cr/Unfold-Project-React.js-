@@ -1,0 +1,82 @@
+{
+  "Owners": [
+    {
+      "id": "1",
+      "number": "01",
+      "text": "A full day of thought-provoking talks with industry leaders",
+      "languageChange": "Sənaye liderləri ilə bir günlük maraqlı danışıqlar"
+    },
+    {
+      "id": "2",
+      "number": "02",
+      "text": "Inspiring ways to respond to the changing hospitality industry",
+      "languageChange": "Qonaqpərvərlik sənayesinin dəyişməsinə cavab vermək üçün ilham verici yollar"
+    },
+    {
+      "id": "3",
+      "number": "03",
+      "text": "Time to meet and connect with peers from around Europe",
+      "languageChange": "Avropa boyunca həmkarlarla görüşmək və əlaqə qurmaq üçün vaxt"
+    }
+  ],
+  "General Managers": [
+    {
+      "id": "4",
+      "number": "01",
+      "text": "Inspiring stories from hospitality innovators",
+      "languageChange": "Qonaqpərvərlik yenilikçilərindən ilham verən hekayələr"
+    },
+    {
+      "id": "5",
+      "number": "02",
+      "text": "A full day to explore the future potential of your property",
+      "languageChange": "Mülkünüzün gələcək potensialını araşdırmaq üçün tam gün"
+    },
+    {
+      "id": "6",
+      "number": "03",
+      "text": "Insights into the power of digital transformation",
+      "languageChange": "Rəqəmsal transformasiyanın gücü haqqında anlayışlar"
+    }
+  ],
+  "Revenue Managers": [
+    {
+      "id": "7",
+      "number": "01",
+      "text": "New ways to turn your unused spaces into revenue streams",
+      "languageChange": "İstifadə olunmayan məkanlarınızı gəlir axınlarına çevirməyin yeni yolları"
+    },
+    {
+      "id": "8",
+      "number": "02",
+      "text": "Insights into the spending habits of the modern guest",
+      "languageChange": "Müasir qonağın xərcləmə vərdişləri haqqında anlayışlar"
+    },
+    {
+      "id": "9",
+      "number": "03",
+      "text": "Learn creative strategies to maximize revenue",
+      "languageChange": "Gəliri maksimuma çatdırmaq üçün yaradıcı strategiyalar öyrənin"
+    }
+  ],
+  "IT Leaders": [
+    {
+      "id": "10",
+      "number": "01",
+      "text": "See what digital transformation means for hospitality in 2024",
+      "languageChange": "Rəqəmsal transformasiyanın 2024-cü ildə qonaqpərvərlik üçün nə demək olduğunu görün"
+    },
+    {
+      "id": "11",
+      "number": "02",
+      "text": "Explore new solutions to streamline operations",
+      "languageChange": "Əməliyyatları sadələşdirmək üçün yeni həlləri araşdırın"
+    },
+    {
+      "id": "12",
+      "number": "03",
+      "text": "Get inspired by the ways peers customize their tech stacks",
+      "languageChange": "Həmkarlarınızın texnologiya yığınlarını necə fərdiləşdirdiyini ilhamlandırın"
+    }
+  ]
+}
