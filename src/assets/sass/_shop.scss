@@ -258,8 +258,8 @@ body,
             .first-cart {
                 display: flex;
                 align-items: center;
-                flex-direction: column-reverse;
-// .left-sideÖe
+                flex-direction: column-reverse !important;
+
                 .left-side {
                     width: 100% !important;
                 }
