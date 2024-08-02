@@ -125,7 +125,7 @@ const ReadMore = () => {
                     <div className='read-more-container'>
                         <div className="col-xxl-12 px-4 py-5">
                             <div className="row flex-lg-row align-items-center g-5 py-5">
-                                <div className="col-6 col-sm-12 col-lg-6">
+                                <div className="col-6 col-sm-12 col-lg-12">
                                     <img
                                         src={readMoreitem.image}
                                         className="d-block mx-lg-auto img-fluid read-more-image"
@@ -135,7 +135,7 @@ const ReadMore = () => {
                                         loading="lazy"
                                     />
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-12">
                                     <h1 className="display-10 lh-1 mb-3 read-more-title">{readMoreitem.title}</h1>
                                     <p className="read-more-paragraph">
                                         {readMoreitem.readMore}

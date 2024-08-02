@@ -62,9 +62,9 @@ const Footer = () => {
               </div>
             </div>
             <div className='right-side-footer mt-5'>
-              <h1>{translations.stayUpdated}</h1>
-              <button className='my-4'>{translations.joinNewsletter}</button>
-              <h6>{translations.subscribeText}</h6>
+              <h1 className='mb-4'>{translations.stayUpdated}</h1>
+              <Link to='/login' className='join-newsletter-button'>{translations.joinNewsletter}</Link>
+              <h6 className='mt-4'>{translations.subscribeText}</h6>
               <h6 className='mt-4'>{translations.unsubscribeText}
                 <Link href="" style={{ color: 'white' }}> Mews Privacy Policy</Link>.
               </h6>

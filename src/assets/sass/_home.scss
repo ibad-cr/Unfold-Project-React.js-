@@ -1822,7 +1822,7 @@ opening-video {
         }
 
         .card-body {
-            width: 100%!important;
+            width: 100% !important;
             height: 230px !important;
 
             button {
@@ -1853,6 +1853,23 @@ opening-video {
             font-style: normal;
             font-size: 1.05em;
             font-family: 'Inter', sans-serif;
+        }
+    }
+
+    .tickets {
+        .tickets-wrapper {
+            @include displayFlex();
+
+            .tickets-container {
+                width: 93% !important;
+
+                .ticket-all-div {
+                    .tickets-text {
+                        width: 48%;
+                        font-size: 1.5em !important;
+                    }
+                }
+            }
         }
     }
 }

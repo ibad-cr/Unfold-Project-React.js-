@@ -172,7 +172,6 @@ body,
 
 @media (max-width: 576px) {
     .shop-container {
-
         .matt-and-richard {
             .first-cart {
                 display: flex;
@@ -219,7 +218,7 @@ body,
         .shop-button-list {
             gap: 5px !important;
 
-            .admin-add-by-ticket{
+            .admin-add-by-ticket {
                 margin-top: 10px !important;
             }
         }
@@ -248,6 +247,52 @@ body,
                 object-fit: cover;
                 margin: 0px 10px;
                 border-radius: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .shop-container {
+        padding-top: 50px;
+
+        .matt-and-richard {
+            .first-cart {
+                gap: 30px;
+
+                .left-side {
+                    width: 100% !important;
+                }
+
+                .right-side {
+                    img {
+                        width: 380px !important;
+                        height: 280px !important;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .second-cart {
+                margin-top: 50px;
+
+                .first-cart-2 {
+                    gap: 50px;
+
+                    .left-side-2 {
+                        width: 100% !important;
+                    }
+
+                    .right-side-2 {
+                        img {
+                            margin-bottom: 20px !important;
+                            width: 380px !important;
+                            height: 280px !important;
+                            object-fit: cover;
+                            border-radius: 32px;
+                        }
+                    }
+                }
             }
         }
     }

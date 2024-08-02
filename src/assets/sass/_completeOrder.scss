@@ -160,3 +160,14 @@
         display: none !important;
     }
 }
+
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .complete-order-image {
+        display: none !important;
+    }
+
+    .mycontainer {
+        max-width: 100% !important;
+    }
+}

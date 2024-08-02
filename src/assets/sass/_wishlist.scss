@@ -235,3 +235,30 @@
         }
     }
 }
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .wishlist-scss {
+        .container {
+
+            .wishlist-cart-information {
+                flex-direction: row;
+
+                .wishlist-ticekts-image {
+                    margin-bottom: 20px;
+
+                    img {
+                        width: 100% !important;
+                        height: 100% !important;
+                        object-fit: cover !important;
+                    }
+                }
+
+                .wishlist-image-texts {
+                    width: 100%;
+                    gap: 10px;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

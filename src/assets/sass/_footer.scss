@@ -63,11 +63,13 @@
             font-size: 2em;
         }
 
-        button {
-            padding: 15px 30px;
+        .join-newsletter-button {
+            padding: 12px 20px;
             border: none;
             background-color: #b3b2fb;
             border-radius: 500px;
+            color: white;
+            text-decoration: none;
         }
 
         h6 {
@@ -109,7 +111,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .footer-left-and-right-side {
         display: flex;
         flex-direction: column-reverse;

@@ -222,3 +222,23 @@ body,
         }
     }
 }
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .login-page {
+        margin-bottom: 150px;
+
+        .login-image {
+            display: none;
+        }
+
+        .login-side {
+            width: 100% !important;
+
+            // =============================FORM=====================================================
+            .form-div {
+                margin-top: 80px !important;
+                width: 93% !important;
+            }
+        }
+    }
+}

@@ -199,3 +199,28 @@
         transform: scale(0.9) !important;
     }
 }
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .singleCard {
+        .card {    
+            .card-body {
+                padding: 5px !important;
+    
+                .text {
+                    font-size: 12px;
+                }
+                .title {
+                    font-size: 18px;
+                }
+    
+                .information {
+                    font-size: 12px;
+                }
+    
+                .buttons {
+                    gap: 0px;
+                }
+            }
+        }
+    }
+}

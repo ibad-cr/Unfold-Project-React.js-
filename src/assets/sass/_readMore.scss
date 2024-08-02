@@ -90,7 +90,7 @@
     }
 }
 
-@media (min-width: 576px) and (max-width: 1024px) {
+@media (min-width: 576px) {
     .read-more-wrapper {
         background-color: #1e1e25;
         display: flex;
@@ -154,4 +154,13 @@
             }
         }
     }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .read-more-wrapper {
+        background-color: #1e1e25;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }  
 }

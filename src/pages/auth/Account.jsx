@@ -99,19 +99,19 @@ const Account = ({ index }) => {
                                 </div>
                             </div>
                         </div>
-                        <div className='users-information mt-3'  data-aos="zoom-in-up" data-aos-duration="1000">
+                        <div className='users-information mt-3' data-aos="zoom-in-up" data-aos-duration="1000">
                             <h5>Fullname: {filterUsers.fullname}</h5>
                             <h5>Lastname: {filterUsers.lastname}</h5>
                             <h5>Email: {filterUsers.email}</h5>
                             <h5>
+                                <div onClick={() => toggle(index)} className='d-flex align-items-center justify-content-between' style={{ cursor: 'pointer' }}>
+                                    <span>Order</span>
+                                    <span className={`open-button ${accordion === index ? 'clicked' : ''}`}><RiArrowDownSLine /></span>
+                                </div>
                                 {filterCompleteOrderUsers.length > 0 ? (
                                     filterCompleteOrderUsers.map((orderItem, idx) => (
                                         <div key={idx} className='account-order-accordion'>
                                             <div className='account-order-toggle-div'>
-                                                <div onClick={() => toggle(index)} className='d-flex align-items-center justify-content-between' style={{ cursor: 'pointer' }}>
-                                                    <span>Order</span>
-                                                    <span className={`open-button ${accordion === index ? 'clicked' : ''}`}><RiArrowDownSLine /></span>
-                                                </div>
                                                 <div className={accordion === index ? 'text active' : 'text'}>
                                                     <div>
                                                         {orderItem.complete_order_products.map((product, productIdx) => (
@@ -247,7 +247,7 @@ const Account = ({ index }) => {
                             </h5>
                             <h5>
                                 <div className='account-log-out-button d-flex align-items-center justify-content-end'>
-                                    <button style={{ cursor: 'pointer', fontSize: '17px', border: 'none' }} className='d-flex align-items-center'
+                                    <button style={{ cursor: 'pointer', fontSize: '17px', border: 'none', background: ' none' }} className='d-flex align-items-center'
                                         onClick={() => {
                                             removeCookie('cookie-ticket');
                                             setTimeout(() => window.location.assign('/'), 1500);

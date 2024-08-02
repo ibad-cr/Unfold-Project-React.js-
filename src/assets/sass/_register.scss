@@ -175,7 +175,7 @@ body,
                 .login-text {
                     color: black;
                     text-decoration: none;
-                    }
+                }
 
                 .arrow {
                     transition: 0.4s;
@@ -229,142 +229,33 @@ body,
             // =============================FORM=====================================================
             .form-div {
                 margin-top: 30px !important;
-                // margin-left: 200px;
 
                 .form {
                     width: 100% !important;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
-                    // max-width: 350px;
                     padding: 20px;
                     border-radius: 20px;
                     position: relative;
                 }
-
-                .title {
-                    font-size: 28px;
-                    font-weight: 600;
-                    letter-spacing: -1px;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    padding-left: 30px;
-                    color: black;
-                }
-
-                .title::before {
-                    width: 18px;
-                    height: 18px;
-                }
-
-                .title::after {
-                    width: 18px;
-                    height: 18px;
-                    animation: pulse 1s linear infinite;
-                }
-
-                .title::before,
-                .title::after {
-                    position: absolute;
-                    content: "";
-                    height: 16px;
-                    width: 16px;
-                    border-radius: 50%;
-                    left: 0px;
-                    background-color: black;
-                }
-
-                .message,
-                .signin {
-                    font-size: 14.5px;
-                    color: black;
-                }
-
-                .signin {
-                    text-align: center;
-                }
-
-                .signin a:hover {
-                    text-decoration: underline black;
-                }
-
-                .signin a {
-                    color: black;
-                }
-
-                .flex {
-                    display: flex;
-                    width: 100%;
-                    gap: 6px;
-                }
-
-                .form label {
-                    position: relative;
-                }
-
-                .form label .input {
-                    color: black;
-                    width: 100%;
-                    padding: 20px 05px 05px 10px;
-                    outline: 0;
-                    border-radius: 10px;
-                    border: 1px solid black;
-                }
-
-                .form label .input+span {
-                    color: black;
-                    position: absolute;
-                    left: 10px;
-                    top: 0px;
-                    font-size: 0.9em;
-                    cursor: text;
-                    transition: 0.3s ease;
-                }
-
-                .form label .input:placeholder-shown+span {
-                    top: 12.5px;
-                    font-size: 0.9em;
-                }
-
-                .form label .input:focus+span,
-                .form label .input:valid+span {
-                    color: black;
-                    top: 4px;
-                    font-size: 0.7em;
-                }
-
-                .input {
-                    font-size: medium;
-                }
-
-                .submit {
-                    border: none;
-                    outline: none;
-                    padding: 10px;
-                    border-radius: 10px;
-                    color: white;
-                    font-size: 16px;
-                    transform: .3s ease;
-                    background-color: black;
-                }
-
-                .submit:hover {
-                    background-color: rgb(61, 61, 61);
-                }
-
-                @keyframes pulse {
-                    from {
-                        transform: scale(0.9);
-                        opacity: 1;
-                    }
-
-                    to {
-                        transform: scale(1.8);
-                        opacity: 0;
-                    }
-                }
             }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .register-image {
+        display: none;
+    }
+
+    .register-side {
+        width: 100% !important;
+
+        // =============================FORM=====================================================
+        .form-div {
+            margin-top: 30px !important;
+            width: 93% !important;
         }
     }
 }

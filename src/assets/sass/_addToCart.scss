@@ -103,7 +103,7 @@
             margin-bottom: 30px;
             display: flex;
             gap: 50px;
-
+            
             .ticekts-image {
                 img {
                     width: 500px;
@@ -250,6 +250,36 @@
             }
 
             .image-texts {
+                gap: 10px;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1023px) {
+    .container {
+        .clear-button {
+            width: 110px;
+            padding: 5px 0px !important;
+            font-size: 11px;
+        }
+
+        .cart-information {
+            flex-direction: row;
+
+            .ticekts-image {
+                margin-bottom: 20px;
+                
+                img {
+                    width: 100% !important;
+                    height: 100% !important;
+                    object-fit: cover !important;
+                }
+            }
+            
+            .image-texts {
+                width: 100%;
                 gap: 10px;
                 flex-direction: column;
             }
