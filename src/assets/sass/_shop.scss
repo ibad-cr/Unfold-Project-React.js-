@@ -124,11 +124,48 @@ body,
                 color: black;
             }
 
-            // button:hover {
-            //     background: #3a3a41;
-            //     border-radius: 50em;
-            //     color: white;
-            // }
+            .sort-dropdown-div {
+                .sort-dropbtn {
+                    background: none;
+                    border: none;
+                }
+
+                .sort-dropdown {
+                    position: relative;
+                    display: inline-block;
+                }
+                
+                .sort-dropdown-content {
+                    display: none;
+                    position: absolute;
+                    right: 0;
+                    background-color: white;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    border-radius: 12px;
+                }
+                
+                .sort-dropdown-content .low, .high {
+                    color: black;
+                    padding: 6px 12px;
+                    text-decoration: none;
+                    display: block;
+                    border-radius: 12px;
+                }
+
+                .sort-dropdown-content.active {
+                    background-color: #ddd;
+                }
+
+                .sort-dropdown-content .low:hover, .high:hover{
+                    background: #dfddf5;
+                    color: black;
+                }
+
+                .sort-dropdown:hover .sort-dropdown-content {
+                    display: block;
+                }
+            }
         }
 
         @keyframes slide {

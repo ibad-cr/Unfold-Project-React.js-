@@ -6,6 +6,7 @@ import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 import { LanguageContext } from '../context/Language';
 import Aos from 'aos';
+import { CgSortAz } from 'react-icons/cg';
 
 const Shop = () => {
   const shop = useSelector(state => state.shop);
@@ -31,6 +32,17 @@ const Shop = () => {
 
   // ====================================Language========================================
   const [language, setLanguage] = useContext(LanguageContext);
+
+  // =================================Sort Method========================================
+  const lowButton = () => {
+    const sortedShop = [...filteredShop].sort((a, b) => a.price - b.price);
+    setFilteredShop(sortedShop);
+  };
+
+  const highButton = () => {
+    const sortedShop = [...filteredShop].sort((a, b) => b.price - a.price);
+    setFilteredShop(sortedShop);
+  };
 
   // ======================AOS======================================================================
   useEffect(() => {
@@ -85,36 +97,50 @@ const Shop = () => {
 
         <div className='shop-carts'>
           <div className='mb-5'><h1>{language === 'AZ' ? 'Görüşlər' : 'Meetings'}</h1></div>
-          <ul className='d-flex mb-5 shop-button-list' style={{ gap: '10px', margin: '0', padding: '0', width: '100%', flexWrap: 'wrap'}}>
-            <li className='list-group-item' data-aos="fade-left" data-aos-duration="1200">
-              <button style={{cursor: 'pointer'}} className={`${activeCategory === 'All' ? 'active' : ''}`} onClick={() => filterData('All')}>{language === 'AZ' ? 'Hamısı' : 'All'}</button>
-            </li>
-            <li className='list-group-item' data-aos="fade-left" data-aos-duration="1400">
-              <button style={{cursor: 'pointer'}} className={`${activeCategory === 'Industry vision' ? 'active' : ''}`} onClick={() => filterData('Industry vision')}>{language === 'AZ' ? 'Sənaye baxışı' : 'Industry vision'}</button>
-            </li>
-            <li className='list-group-item' data-aos="fade-left" data-aos-duration="1600">
-              <button style={{cursor: 'pointer'}} className={`${activeCategory === 'Revenue and data' ? 'active' : ''}`} onClick={() => filterData('Revenue and data')}>{language === 'AZ' ? 'Gəlir və məlumat' : 'Revenue and data'}</button>
-            </li>
-            <li className='list-group-item' data-aos="fade-left" data-aos-duration="2000">
-              <button  style={{cursor: 'pointer'}} className={`${activeCategory === 'Operational sessions' ? 'active' : ''}`} onClick={() => filterData('Operational sessions')}>{language === 'AZ' ? 'Əməliyyat sessiyaları' : 'Operational sessions'}</button>
-            </li>
+          <div className='d-flex justify-content-between'>
+            <ul className='d-flex mb-5 shop-button-list' style={{ gap: '10px', margin: '0', padding: '0', width: '100%', flexWrap: 'wrap' }}>
+              <li className='list-group-item' data-aos="fade-left" data-aos-duration="1200">
+                <button style={{ cursor: 'pointer' }} className={`${activeCategory === 'All' ? 'active' : ''}`} onClick={() => filterData('All')}>{language === 'AZ' ? 'Hamısı' : 'All'}</button>
+              </li>
+              <li className='list-group-item' data-aos="fade-left" data-aos-duration="1400">
+                <button style={{ cursor: 'pointer' }} className={`${activeCategory === 'Industry vision' ? 'active' : ''}`} onClick={() => filterData('Industry vision')}>{language === 'AZ' ? 'Sənaye baxışı' : 'Industry vision'}</button>
+              </li>
+              <li className='list-group-item' data-aos="fade-left" data-aos-duration="1600">
+                <button style={{ cursor: 'pointer' }} className={`${activeCategory === 'Revenue and data' ? 'active' : ''}`} onClick={() => filterData('Revenue and data')}>{language === 'AZ' ? 'Gəlir və məlumat' : 'Revenue and data'}</button>
+              </li>
+              <li className='list-group-item' data-aos="fade-left" data-aos-duration="2000">
+                <button style={{ cursor: 'pointer' }} className={`${activeCategory === 'Operational sessions' ? 'active' : ''}`} onClick={() => filterData('Operational sessions')}>{language === 'AZ' ? 'Əməliyyat sessiyaları' : 'Operational sessions'}</button>
+              </li>
 
-            <li className='list-group-item'  data-aos="fade-left" data-aos-duration="1800">
-              {cookie['adminToken'] === '000000000000' ?
-                <div className='admin-add-by-ticket'>
-                  <Link
-                    to='/tickets/addTicketByAdmin'
-                    className='btn btn-warning'
-                    onClick={() => window.location.replace('#top')}>
-                    {language === 'AZ' ? 'Biletləri əlavə edin' : 'Add Tickets'}
-                  </Link>
-                </div> : ''}
-            </li>
-          </ul>
+              <li className='list-group-item' data-aos="fade-left" data-aos-duration="1800">
+                {cookie['adminToken'] === '000000000000' ?
+                  <div className='admin-add-by-ticket'>
+                    <Link
+                      to='/tickets/addTicketByAdmin'
+                      className='btn btn-warning'
+                      onClick={() => window.location.replace('#top')}>
+                      {language === 'AZ' ? 'Biletləri əlavə edin' : 'Add Tickets'}
+                    </Link>
+                  </div> : ''}
+              </li>
+            </ul>
+
+            <div className='sort-dropdown-div'>
+              <div className="sort-dropdown">
+                <button className="sort-dropbtn">
+                  <CgSortAz style={{ fontSize: '25px', color: 'white' }} />
+                </button>
+                <div className="sort-dropdown-content">
+                  <button className='low' onClick={lowButton}>{language === 'AZ' ? 'Qiymət: aşağıdan yüksək' : 'Price: low to high'}</button>
+                  <button className='high' onClick={highButton}>{language === 'AZ' ? 'Qiymət: yüksəkdən aşağı' : 'Price: high to low'}</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className='row row-cols-1 row-cols-md-3 g-5'>
             {filteredShop.map((item, index) => (
-              <div  data-aos="fade-right" data-aos-duration="1000">
+              <div data-aos="fade-right" data-aos-duration="1000">
                 <ShopSingleCard
                   key={index}
                   id={item.id}
@@ -162,7 +188,6 @@ const Shop = () => {
               <img src="https://www.mews.com/hs-fs/hubfs/Unfold%20Unpacked_Blog%203%20%CE%93%C3%87%C3%B4%20operational%20insights.webp?width=1230&height=678&name=Unfold%20Unpacked_Blog%203%20%CE%93%C3%87%C3%B4%20operational%20insights.webp" alt />
             </div>
           </div>
-
         </div>
       </div>
     </div>

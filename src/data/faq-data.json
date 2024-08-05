@@ -2,133 +2,118 @@
     {
         "id": "1",
         "title": "Where can I stay?",
+        "titleLanguage": "Harada qala bilərəm?",
         "text": "Looking for a place to kick back and relax after a full day of networking? There are loads of great hotels within walking distance. We have secured a discounted rate at the BobW properties - please use the code BOBWXMEWS",
-        "category": "Where can I stay?"
+        "textLanguage": "Şəbəkə ilə tam bir gündən sonra istirahət etmək və istirahət etmək üçün bir yer axtarırsınız? Piyada məsafədə çoxlu böyük otellər var. Biz BobW mülklərində endirimli tarifi təmin etdik - lütfən, BOBWXMEWS kodundan istifadə edin",
+        "category": "Where can I stay?",
+        "categoryLanguage": "Harada qala bilərəm?"
     },
     {
         "id": "2",
         "title": "What time does the event start?",
+        "titleLanguage": "Tədbir nə vaxt başlayır?",
         "text": "Doors open at 08:00am for registration and a caffeine kick. Sessions start at 09:00am sharp! Plan your day with the agenda: https://www.mewsunfold.com/agenda",
-        "category": "In-person experience"
+        "textLanguage": "Qapılar qeydiyyat və qəhvə içmək üçün saat 08:00-da açılır. Sessiyalar saat 09:00-da dəqiq başlayır! Günü planlayın: https://www.mewsunfold.com/agenda",
+        "category": "In-person experience",
+        "categoryLanguage": "Şəxsi təcrübə"
     },
     {
         "id": "3",
         "title": "What's included in my ticket?",
+        "titleLanguage": "Biletimə nə daxildir?",
         "text": "Access to all the main stage sessions, workshop sessions, networking breaks, lunch and what promises to be an eventful evening party. The fee is for a good cause: we’ll plant two trees for every ticket bought through our friends at Hotels for Trees. One from you, one from us. Make the world a little greener, and get yours now.",
-        "category": "In-person experience"
+        "textLanguage": "Əsas səhnə sessiyalarına, seminar sessiyalarına, şəbəkələşmə fasilələrinə, nahara və hadisəli bir axşam partiyasına giriş daxildir. Ücret yaxşı bir məqsədə xidmət edir: Hotels for Trees-də dostlarımız vasitəsilə alınan hər bilet üçün iki ağac əkəcəyik. Birini sizdən, birini bizdən. Dünyanı bir az daha yaşıl edin və biletinizi indi alın.",
+        "category": "In-person experience",
+        "categoryLanguage": "Şəxsi təcrübə"
     },
     {
         "id": "4",
         "title": "What's the dress code?",
+        "titleLanguage": "Geyim qaydası nədir?",
         "text": "We want you to be comfortable as this is an all-day conference style event that also extends into an evening party. That being said, don’t be too casual! No PJs or swimwear please.",
-        "category": "In-person experience"
+        "textLanguage": "Bu, bütün günü davam edən konfrans stili tədbir olduğundan, rahat olmağınızı istəyirik, axşam partiyasına da davam edir. Ancaq çox gündəlik olmağınız lazım deyil! Pijamalar və ya üzgüçülük geyimləri qəbul edilmir.",
+        "category": "In-person experience",
+        "categoryLanguage": "Şəxsi təcrübə"
     },
     {
         "id": "5",
         "title": "Where do I get my badge?",
+        "titleLanguage": "Nişanımı haradan əldə edə bilərəm?",
         "text": "You will receive an email from unfold@mews.com just a few minutes after purchasing a ticket. Search for: 'Confirmed: your Unfold 2024 ticket'. Present the ticket email on May 29 and collect your badge from our onsite team. You can also access your badge via the app Mews Events app.",
-        "category": "In-person experience"
+        "textLanguage": "Bilet alındıqdan bir neçə dəqiqə sonra unfold@mews.com-dan bir e-poçt alacaqsınız. Axtarın: 'Təsdiqləndi: Unfold 2024 biletiniz'. Mayın 29-da bilet e-poçtunuzu təqdim edin və nişanınızı yerindəki komandamızdan alın. Nişanınıza Mews Events tətbiqi vasitəsilə də daxil ola bilərsiniz.",
+        "category": "In-person experience",
+        "categoryLanguage": "Şəxsi təcrübə"
     },
     {
         "id": "6",
         "title": "How do I access the event app?",
+        "titleLanguage": "Tədbir tətbiqinə necə daxil ola bilərəm?",
         "text": "Get the most of your event: Mews Events app.",
-        "category": "In-person experience"
+        "textLanguage": "Tədbirinizdən maksimum faydalanın: Mews Events tətbiqi.",
+        "category": "In-person experience",
+        "categoryLanguage": "Şəxsi təcrübə"
     },
     {
         "id": "7",
         "title": "Do you have a cloakroom?",
+        "titleLanguage": "Palto saxlanılan yeriniz varmı?",
         "text": "Yes, we will have a cloakroom available at the event.",
-        "category": "In-person experience"
+        "textLanguage": "Bəli, tədbirdə palto saxlanılan yer olacaq.",
+        "category": "In-person experience",
+        "categoryLanguage": "Şəxsi təcrübə"
     },
     {
         "id": "8",
         "title": "How many tickets are available per hotel?",
+        "titleLanguage": "Bir otel üçün neçə bilet mövcuddur?",
         "text": "Due to the limited capacity and to encourage more hotel diversity, there are 5 available tickets per hotel.",
-        "category": "Tickets"
+        "textLanguage": "Məhdud tutum və daha çox otel müxtəlifliyini təşviq etmək üçün hər otel üçün 5 bilet mövcuddur.",
+        "category": "Tickets",
+        "categoryLanguage": "Biletlər"
     },
     {
         "id": "9",
         "title": "How many tickets are available for non-hoteliers?",
+        "titleLanguage": "Otel işçisi olmayanlar üçün neçə bilet mövcuddur?",
         "text": "A limited number of tickets are available for hospitality suppliers and vendors, capped at two per company. If you order a hotelier ticket, you’ll get a refund minus platform fees and a kind request to purchase a non-hotelier ticket, if available. When they’re gone, they’re gone.",
-        "category": "Tickets"
+        "textLanguage": "Qonaqpərvərlik təchizatçıları və satıcıları üçün məhdud sayda bilet mövcuddur, hər şirkət üçün ikisi ilə məhdudlaşır. Otel işçisi bileti sifariş etsəniz, platforma haqları çıxılaraq geri qaytarılacaq və mövcud olduğu təqdirdə otel işçisi olmayan bir bilet almaq xahişi ilə qarşılanacaqsınız. Onlar getdikdə, getdi.",
+        "category": "Tickets",
+        "categoryLanguage": "Biletlər"
     },
     {
         "id": "10",
         "title": "How do I get to Muziekgebouw?",
+        "titleLanguage": "Muziekgebouw-a necə gedirəm?",
         "text": "Muziekgebouw is accessible by plane, train, bike and foot – you could even get there by horse if you have one handy. Point is, it's seriously central, just over a 10-minute walk from Amsterdam Centraal Station. Check out the venue section of the website for the map and details.",
-        "category": "Venue"
+        "textLanguage": "Muziekgebouw-a təyyarə, qatar, velosiped və piyada gedə bilərsiniz – əgər əlinizdə at varsa, hətta atla da gedə bilərsiniz. Əsas məsələ odur ki, o, çox mərkəzidir, Amsterdam Centraal Station-dan 10 dəqiqəlik piyada məsafədədir. Xəritə və təfərrüatlar üçün vebsaytın məkan bölməsinə baxın.",
+        "category": "Venue",
+        "categoryLanguage": "Məkan"
     },
     {
         "id": "11",
         "title": "Is the building wheelchair accessible?",
+        "titleLanguage": "Bina əlil arabası ilə girişi mümkündürmü?",
         "text": "The Muziekgebouw is easily accessible for disabled visitors. The Piet Heingarage under the building offers parking especially for the disabled. The garage gives direct access to the Entrance Hall. There are lifts throughout the building, so that all floors are accessible. The toilet is located at floor -1 in the Entrance Hall.",
-        "category": "Venue"
+        "textLanguage": "Muziekgebouw əlil ziyarətçilər üçün asanlıqla girişlidir. Binanın altındakı Piet Heingarage xüsusilə əlillər üçün dayanacaq təklif edir. Qaraj birbaşa Giriş Salonuna giriş təmin edir. Bütün mərtəbələrə giriş imkanı verən liftlər binanın hər yerində mövcuddur. Tualet -1 mərtəbədə, Giriş Salonunda yerləşir.",
+        "category": "Venue",
+        "categoryLanguage": "Məkan"
     },
     {
         "id": "12",
-        "title": "Accessibility across the venue",
-        "text": "Here is more information on venue accessibility.",
-        "category": "Venue"
+        "title": "Can I attend Unfold online?",
+        "titleLanguage": "Unfold tədbirinə onlayn qatıla bilərəmmi?",
+        "text": "We’re afraid that this year’s event is in-person only.",
+        "textLanguage": "Təəssüf ki, bu ilki tədbir yalnız şəxsən iştirak edə biləcəyiniz bir tədbirdir.",
+        "category": "General",
+        "categoryLanguage": "Ümumi"
     },
     {
         "id": "13",
-        "title": "Are there parking spaces nearby?",
-        "text": "There are various parking possibilities in the Muziekgebouw area. We’d suggest: Piet Heingarage - Piet Heinkade 59 1019 GM Amsterdam - 0 meters from the Muziekgebouw - Direct access to the Entrance Hall by elevator or stairs - Possible to order parking vouchers or pre-paid vouchers for business relations via the Muziekgebouw Parkeergarage IJ-oever Centrum - Vriesseveem 9 1019 GM Amsterdam - 400 meters from the Muziekgebouw - 5 minutes walking distance.",
-        "category": "Venue"
-    },
-    {
-        "id": "14",
-        "title": "Can I pre-select workshop sessions prior to the event?",
-        "text": "Yes, we recommend that in case the workshop reaches capacity. Get the most of your event and book in here: Mews Events app.",
-        "category": "Workshop sessions"
-    },
-    {
-        "id": "15",
-        "title": "Will sessions take place simultaneously?",
-        "text": "Yes, after lunch workshop sessions will take place simultaneously. You can opt in for sessions via the Mews events app.",
-        "category": "Workshop sessions"
-    },
-    {
-        "id": "16",
-        "title": "I heard there’s an afterparty? Where is this happening?",
-        "text": "Of course there will be an afterparty! And it will be epic. This will take place within the same venue on FoyerDeck 1. You can get your dancing shoes on from 17:30pm.",
-        "category": "Networking & afterparty"
-    },
-    {
-        "id": "17",
-        "title": "Can I bring guests to this part of the evening?",
-        "text": "Unfortunately not. The drinks and partying is reserved for people that have attended the full day event.",
-        "category": "Networking & afterparty"
-    },
-    {
-        "id": "18",
-        "title": "Who is organising this event?",
-        "text": "Unfold is Mews’ annual hospitality tech forum.",
-        "category": "Other"
-    },
-    {
-        "id": "19",
-        "title": "Will there be video and photography at the event?",
-        "text": "We will have photography and videographers at the event as sessions will also be recorded. Content and imagery will be used post event for promotion and information sharing.",
-        "category": "Other"
-    },
-    {
-        "id": "20",
-        "title": "Will you share the recordings and content post event?",
-        "text": "Yes, we will share recordings with everyone who attends or signs up to the Unfold newsletter.",
-        "category": "Other"
-    },
-    {
-        "id": "21",
-        "title": "Will there be a livestream or recording of sessions?",
-        "text": "Yes, we will have a livestream of select sessions. Other sessions will be recorded and shared post event. Sign up to our Unfold newsletter to get the updates.",
-        "category": "Other"
-    },
-    {
-        "id": "22",
-        "title": "Who is Hotels for Trees?",
-        "text": "The Hotel for Trees Foundation is dedicated to creating a greener world by teaming up with hotels to plant a tree whenever guests skip housekeeping. Discover more green and sustainable hotel practices.",
-        "category": "Other"
+        "title": "What if I can't attend?",
+        "titleLanguage": "Əgər qatıla bilməsəm?",
+        "text": "We’ve all been there. If you can’t make it to Unfold 2024, you can cancel your ticket for a full refund up to 7 days before the event. The deadline is May 22, 2024.",
+        "textLanguage": "Hamımız orda olmuşuq. Unfold 2024 tədbirinə qatıla bilmirsinizsə, tədbirdən 7 gün əvvələ qədər tam geri qaytarılmaq üçün biletinizi ləğv edə bilərsiniz. Son tarix 22 May 2024-cü ildir.",
+        "category": "General",
+        "categoryLanguage": "Ümumi"
     }
 ]
