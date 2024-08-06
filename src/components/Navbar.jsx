@@ -270,7 +270,7 @@ const Navbar = () => {
                                   onChange={e => setKeyword(e.target.value)}
                                   className='search-input mt-3'
                                   type="text"
-                                  placeholder='Search product' />
+                                  placeholder={language ==='AZ'? 'Məhsul axtarın': 'Search product'} />
                                 <button>
                                   <i class="fa-solid fa-magnifying-glass" style={{ color: 'rgba(0, 0, 0, 0.3)', }}></i>
                                 </button>

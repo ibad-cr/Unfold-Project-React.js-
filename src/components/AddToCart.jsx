@@ -5,8 +5,10 @@ import supabase from '../tools/config/connect';
 import { useEffect } from 'react';
 import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
+import { LanguageContext } from '../context/Language';
+import { useContext } from 'react';
 
-const AddToCart = () => {
+const AddToCart = ({ languageInformation }) => {
 
     const [cookie, setCookie, removeCookie] = useCookies();
     const [basket, setBasket] = useState([]);
@@ -88,6 +90,9 @@ const AddToCart = () => {
         }, 0);
     }
 
+    // ====================================Language========================================
+    const [language, setLanguage] = useContext(LanguageContext);
+
     return (
         <div>
             {(findBasket === undefined || findBasket?.products?.length === 0) ? (<div style={{ position: 'relative' }}>
@@ -109,18 +114,18 @@ const AddToCart = () => {
                             borderRadius: '50em',
                             padding: '5px 60px',
                             background: '#b3b2fb'
-                        }}>Tickets</Link>
+                        }}>{language === 'AZ' ? 'Biletlər' : 'Tickets'}</Link>
                 </div>
             </div>) :
                 <div>
                     <div className='container d-flex justify-content-between align-items-center mb-5 mt-5' style={{ borderBottom: '1px solid black', paddingBottom: '10px' }}>
                         <div>
-                            <div>Total price: <strong>$</strong><span><strong>{totalPrice().toFixed(2)}</strong></span></div>
+                            <div>{language === 'AZ' ? 'Ümumi qiymət:' : 'Total price:'} <strong>$</strong><span><strong>{totalPrice().toFixed(2)}</strong></span></div>
                         </div>
                         <div className='d-flex align-items-center' style={{ gap: '20px' }}>
                             <Link to='/tickets/addToCart/completeOrder'
                                 style={{ textDecoration: 'none', color: 'black', borderBottom: '1px solid black', padding: '0px 5px' }}>
-                                Complete Order
+                                {language === 'AZ' ? 'Sifarişi Tamamla' : 'Complete Order'}
                             </Link>
                             <div className='clear-button' style={{ cursor: 'pointer' }} onClick={() => {
                                 const deleteAllData = async () => {
@@ -138,7 +143,7 @@ const AddToCart = () => {
 
                                 deleteAllData();
 
-                            }}>Clear the basket</div>
+                            }}>{language === 'AZ' ? 'Səbəti təmizlə' : 'Clear the basket'}</div>
                         </div>
                     </div>
                     {(findBasket.products.map((item, count) => (
@@ -176,13 +181,13 @@ const AddToCart = () => {
                                                 <div className='add-to-cart-toggle-div mb-2' style={{ padding: '10px' }} onClick={() => toggle(count)}>
                                                     <div className='d-flex justify-content-between' onClick={() => toggle(index)}>
                                                         <button className='add-to-cart-open-button'>
-                                                            Read More
+                                                            {language === 'AZ' ? 'Daha ətraflı' : 'Read More'}
                                                             <span className={`add-to-cart-open-button mx-2 ${accordion === count ? 'clicked' : ''}`}><RiArrowDownSLine /></span>
                                                         </button>
                                                     </div>
                                                     <div className='mt-1'>
                                                         <p className={accordion === count ? 'text active' : 'text'}>
-                                                            {item.information}
+                                                            {language === 'AZ' ? item.languageInformation : item.information}
                                                         </p>
                                                     </div>
                                                 </div>
@@ -190,25 +195,25 @@ const AddToCart = () => {
                                                 <div className='number-of-people'>
                                                     <div>
                                                         <div className=''>
-                                                            <h6>Number of people:</h6>
+                                                            <h6>{language === 'AZ' ? 'İnsan sayı:' : 'Number of people:'}</h6>
                                                         </div>
                                                         <div className='number-of-people-buttons'>
                                                             <button onClick={() => {
                                                                 if (item.quantity > 1) {
                                                                     updateProductQuantity(item.id, item.quantity - 1, item.price / item.quantity);
                                                                 }
-                                                            }} style={{cursor: 'pointer'}}>-</button>
+                                                            }} style={{ cursor: 'pointer' }}>-</button>
                                                             <span className='mx-3' style={{ color: 'black' }}>{item.quantity}</span>
-                                                            <button style={{cursor: 'pointer'}} onClick={() => updateProductQuantity(item.id, item.quantity + 1, item.price / item.quantity)}>+</button>
+                                                            <button style={{ cursor: 'pointer' }} onClick={() => updateProductQuantity(item.id, item.quantity + 1, item.price / item.quantity)}>+</button>
                                                         </div>
                                                         <div>
-                                                            <p>Price: <span style={{ fontSize: '14px' }}>$ {(item.price)}</span></p>
+                                                            <p>{language === 'AZ' ? 'Qiymət:' : 'Price:'} <span style={{ fontSize: '14px' }}>$ {(item.price)}</span></p>
                                                         </div>
                                                     </div>
                                                     <div className='line'></div>
                                                     <div className='mt-2 complete-button'>
                                                         <button class="button">
-                                                            Complete the order
+                                                            {language === 'AZ' ? 'Sifarişi tamamla' : 'Complete the order'}
                                                         </button>
                                                     </div>
                                                 </div>
@@ -225,4 +230,4 @@ const AddToCart = () => {
     )
 }
 
-export default AddToCart
+export default AddToCart;

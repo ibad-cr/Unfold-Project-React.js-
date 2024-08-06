@@ -4,8 +4,10 @@ import supabase from '../tools/config/connect';
 import { useCookies } from 'react-cookie';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { LanguageContext } from '../context/Language';
+import { useContext } from 'react';
 
-const Wishlist = ({ quantity }) => {
+const Wishlist = ({ quantity, languageInformation }) => {
   const [cookie, setCookie, removeCookie] = useCookies();
   const [wishlist, setWishlist] = useState([]);
 
@@ -80,6 +82,9 @@ const Wishlist = ({ quantity }) => {
     setAccordion(i);
   };
 
+  // ====================================Language========================================
+  const [language, setLanguage] = useContext(LanguageContext);
+
 
   return (
     <div>
@@ -103,13 +108,15 @@ const Wishlist = ({ quantity }) => {
                 borderRadius: '50em',
                 padding: '5px 60px',
                 background: '#b3b2fb'
-              }}>Tickets</Link>
+              }}>
+              {language === 'AZ' ? 'Biletlər' : 'Tickets'}
+            </Link>
           </div>
         </div>
       ) : (
         <div className='wishlist-scss'>
           <div className='container d-flex justify-content-between align-items-center mb-5 mt-5' style={{ borderBottom: '1px solid black', paddingBottom: '10px' }}>
-            <div>Wishlist</div>
+            <div>{language === 'AZ' ? 'Seçimlər' : 'Wishlist'}</div>
             <div className='wishlist-clear-button' style={{ cursor: 'pointer' }} onClick={() => {
               const deleteWishlistAllData = async () => {
                 const { error } = await supabase
@@ -125,17 +132,17 @@ const Wishlist = ({ quantity }) => {
               };
 
               deleteWishlistAllData();
-            }}>Clear the Wishlist</div>
+            }}>
+              {language === 'AZ' ? 'Hamısını Sil' : 'Clear the Wishlist'}
+            </div>
           </div>
           <div className='container mt-5 mb-5'>
             {findWishlist.wishlist_products.map((item, count) => (
-              <div>
+              <div key={item.id}>
                 <div className='wishlist-cart-information'>
                   <div className='wishlist-image-texts'>
                     <div className='wishlist-count animate__animated animate__fadeInLeft'>
-                      <p>
-                        {count + 1}
-                      </p>
+                      <p>{count + 1}</p>
                     </div>
                     {item && (
                       <>
@@ -159,23 +166,23 @@ const Wishlist = ({ quantity }) => {
                             </div>
                           </div>
                           <h3 className='my-3' style={{ margin: '0', padding: '0' }}>{item.title}</h3>
-
                           <div className='wishlist-toggle-div mb-2' style={{ padding: '10px' }} onClick={() => toggle(count)}>
                             <div className='d-flex justify-content-between'>
                               <button className='wishlist-open-button'>
-                                Read More
+                                {language === 'AZ' ? 'Daha ətraflı' : 'Read More'}
                                 <span className={`wishlist-open-button mx-2 ${accordion === count ? 'clicked' : ''}`}><RiArrowDownSLine /></span>
                               </button>
                             </div>
                             <div className='mt-1'>
                               <p className={accordion === count ? 'text active' : 'text'}>
-                                {item.information}
+                                {language === 'AZ' ? item.languageInformation : item.information}
                               </p>
                             </div>
                           </div>
-
                           <div className='wishlist-complete-button'>
-                            <button className='button' onClick={() => addToBasket(item)}>Add to card</button>
+                            <button className='button' onClick={() => addToBasket(item)}>
+                              {language === 'AZ' ? 'Səbətə əlavə et' : 'Add to cart'}
+                            </button>
                           </div>
                         </div>
                       </>
