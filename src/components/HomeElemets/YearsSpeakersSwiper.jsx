@@ -29,6 +29,10 @@ const YearsSpeakersSwiper = () => {
                             slidesPerView: 3,
                             spaceBetween: 80,
                         },
+                        1024: {
+                            slidesPerView: 4,
+                            spaceBetween: 80,
+                        },
                     }}
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
